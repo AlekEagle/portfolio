@@ -3,14 +3,57 @@
     <router-link to="/">
       <div class="nav-logo">
         <img src="@/assets/images/me-irl.webp" alt="Logo" />
-        <p>AlekEagle</p>
+        <p>Alek Evans</p>
       </div>
     </router-link>
+    <nav class="navbar">
+      <ul ref="navMenu" class="nav-menu">
+        <li class="nav-item" @click="hideMobileMenu">
+          <router-link to="/">Home</router-link>
+        </li>
+        <li class="nav-item" @click="hideMobileMenu">
+          <a
+            href="https://patreon.com/alekeagle"
+            target="_blank"
+            rel="noopener"
+          >
+            Patreon
+          </a>
+        </li>
+        <li class="nav-item" @click="hideMobileMenu">
+          <a href="https://alekeagle.com/d" target="_blank" rel="noopener">
+            Discord
+          </a>
+        </li>
+      </ul>
+      <div ref="hamburger" class="hamburger" @click="mobileMenu">
+        <span class="bar" />
+        <span class="bar" />
+        <span class="bar" />
+      </div>
+    </nav>
   </header>
   <main>
     <router-view />
   </main>
 </template>
+
+<script lang="ts" setup>
+  import { ref } from 'vue';
+
+  const navMenu = ref<HTMLElement>(),
+    hamburger = ref<HTMLElement>();
+
+  const mobileMenu = () => {
+    navMenu?.value?.classList.toggle('active');
+    hamburger?.value?.classList.toggle('active');
+  };
+
+  const hideMobileMenu = () => {
+    navMenu?.value?.classList.remove('active');
+    hamburger?.value?.classList.remove('active');
+  };
+</script>
 
 <style>
   @font-face {
@@ -430,6 +473,11 @@
     font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
       sans-serif;
   }
+
+  li {
+    list-style: none;
+  }
+
   .header {
     display: flex;
     width: calc(100vw - (10px * 2));
@@ -438,10 +486,71 @@
     align-items: center;
   }
 
+  .nav-links {
+    margin-right: 15px;
+    float: right;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+  }
+
+  .bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out,
+      background-color 0.25s;
+    background-color: #fff;
+  }
+
+  .nav-item {
+    user-select: none;
+  }
+
   a {
     text-decoration: none;
     color: #00ccff;
     transition: background-color 0.25s, color 0.25s;
+  }
+
+  main h2 {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .nav-item {
+    user-select: none;
+  }
+
+  .nav-item a {
+    height: fit-content;
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+      sans-serif;
+    margin: 0 5px;
+    font-size: 19px;
+    font-weight: 600;
+    color: #fff;
+    border-bottom: transparent solid 4px;
+    transition: border 0.25s, color 0.25s;
+  }
+
+  .nav-item a.router-link-active {
+    border-bottom: #ffffff solid 4px;
+  }
+
+  .nav-item a:hover:not(.router-link-active) {
+    border-bottom: #019ac0 solid 4px;
   }
 
   code {
@@ -486,6 +595,56 @@
     text-align: center;
   }
 
+  @media only screen and (max-width: 840px) {
+    .nav-menu {
+      padding: 10px 0;
+      position: fixed;
+      left: -100%;
+      top: 5rem;
+      flex-direction: column;
+      background-color: #212121bf;
+      margin: 0 30px;
+      width: calc(100% - (30px * 2));
+      border-radius: 10px;
+      text-align: center;
+      transition: left 0.4s, background-color 0.25s, border 0.4s;
+      box-shadow: 10px 10px 10px #00000099;
+      backdrop-filter: blur(5px);
+      z-index: 10;
+      border: 2px solid #fff;
+    }
+
+    .nav-menu.active {
+      left: 0;
+    }
+
+    .hamburger {
+      display: block;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+      transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+      transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-item {
+      padding: 2px 0;
+    }
+
+    .nav-item a {
+      font-size: 33px;
+    }
+  }
+
   ::-webkit-scrollbar {
     width: 10px;
     height: 10px;
@@ -505,5 +664,49 @@
 
   ::-webkit-scrollbar-thumb {
     background-color: #c2c2c2;
+  }
+
+  button {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    margin: 5px 0;
+    font-family: 'Montserrat', 'Franklin Gothic Medium', 'Arial Narrow', Arial,
+      sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: border 0.25s, background-color 0.25s, color 0.25s;
+    user-select: none;
+    background-color: #272727;
+    color: #fff;
+    border: 1px solid #000000;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+    background-color: #141414;
+    color: #8e8e8e;
+  }
+
+  .quick-action-buttons-container {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 40%;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 781px) {
+    .quick-action-buttons-container {
+      width: 90%;
+    }
+  }
+
+  button:hover:not(:disabled) {
+    background-color: #202020;
+  }
+
+  button:focus {
+    outline: none;
   }
 </style>

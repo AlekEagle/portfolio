@@ -709,4 +709,11 @@
   button:focus {
     outline: none;
   }
+
+  img.hero-img {
+    border-radius: 50%;
+    width: 160px;
+    margin: 20px 0;
+    box-shadow: 0px 15px 20px #000000;
+  }
 </style>

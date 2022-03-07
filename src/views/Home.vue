@@ -56,6 +56,15 @@
     </ContentBox>
   </div>
 
+  <iframe
+    src="https://canary.discord.com/widget?id=456542159210807307&theme=dark"
+    width="350"
+    height="500"
+    allowtransparency="true"
+    frameborder="0"
+    sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+  ></iframe>
+
   <Modal title="About Me" cancelable ref="aboutMeModal">
     <p>
       Hi! My name is Alek Evans, and I'm a developer of a myriad of different

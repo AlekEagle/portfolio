@@ -3,6 +3,9 @@
   <h2>Discord's lovable stand-in father figure!</h2>
   <div class="quick-action-buttons-container">
     <button @click="openInvitePopup">Invite</button>
+    <a href="https://github.com/AlekEagle/dadbot" rel="noopener" target="_blank"
+      ><button>GitHub</button></a
+    >
   </div>
   <img class="hero-img" src="@/assets/images/dad.png" alt="Dad Bot" />
 
@@ -25,6 +28,12 @@
     <ContentBox title="He has a Wife!" span click="/mom-bot">
       <p>
         Mom Bot is Dad Bot's wife, and they have a very special relationship.
+      </p>
+    </ContentBox>
+    <ContentBox title="Batteries included!">
+      <p>
+        Dad Bot comes with batteries included (82 D Cells), so you don't have to
+        worry about purchasing them yourself!
       </p>
     </ContentBox>
     <ContentBox title="Add him now!" span :click="openInvitePopup">

@@ -3,6 +3,9 @@
   <h2>Discord's lovable mother figure!</h2>
   <div class="quick-action-buttons-container">
     <button @click="openInvitePopup">Invite</button>
+    <a href="https://github.com/AlekEagle/mombot" rel="noopener" target="_blank"
+      ><button>GitHub</button></a
+    >
   </div>
   <img class="hero-img" src="@/assets/images/mom.png" alt="Mom Bot" />
 
@@ -19,6 +22,12 @@
     </ContentBox>
     <ContentBox title="Know her husband?" span click="/dad-bot">
       <p> She's the wife of the biggest father on Discord! </p>
+    </ContentBox>
+    <ContentBox title="Batteries included!">
+      <p>
+        Mom Bot comes with batteries included (82 D Cells), so you don't have to
+        worry about purchasing them yourself!
+      </p>
     </ContentBox>
     <ContentBox title="Add her now!" span :click="openInvitePopup">
       <p>

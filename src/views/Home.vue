@@ -70,7 +70,7 @@
       Hi! My name is Alek Evans, and I'm a developer of a myriad of different
       things. I do full-stack web development, but I'm also interested in
       developing Discord bots and programs associated with Discord itself. I'm
-      17 and from Utah. If you want to get in touch, feel free to email me @
+      18 and from Utah. If you want to get in touch, feel free to email me @
       <a href="mailto:contact@alekeagle.com">contact@alekeagle.com</a>.
     </p>
   </Modal>

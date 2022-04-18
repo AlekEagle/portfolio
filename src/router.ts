@@ -17,6 +17,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/mom-bot',
     name: 'MomBot',
     component: () => import('@/views/MomBot.vue')
+  },
+  {
+    path: '/bot-pp',
+    name: 'BotPrivacyPolicy',
+    component: () => import('@/views/BotPP.vue')
   }
 ];
 

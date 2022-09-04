@@ -19,6 +19,15 @@
         Dad Bot's code is open source, so anyone can add to or improve Dad!
       </p>
     </ContentBox>
+    <ContentBox
+      title="Based on Reaxt's original bot"
+      span
+      :click="{ newTab: true, to: 'https://github.com/Reaxt' }"
+    >
+      <p>
+        Thank you so much Reaxt for starting the original Dad Bot, without it there wouldn't be a Dad Bot to begin with!
+      </p>
+    </ContentBox>
     <ContentBox title="Biggest Father Figure on Discord">
       <p>
         With over 3 million users and more than 100 thousand servers, Dad Bot is

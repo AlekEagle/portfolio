@@ -47,6 +47,14 @@
       <p> This website! </p>
     </ContentBox>
     <ContentBox
+      title="My GPG Public Key"
+      span
+      :src="circleImg"
+      :click="{ newTab: true, to: 'https://alekeagle.com/pubkey.asc' }"
+    >
+      <p> Need to know it's me or communicate securely? Here's my public GPG key! (Also available on the OpenPGP keyserver.)</p>
+    </ContentBox>
+    <ContentBox
       title="My Discord Server"
       span
       :src="alekSphereImg"

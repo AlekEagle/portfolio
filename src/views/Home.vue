@@ -9,10 +9,10 @@
   </div>
   <div class="content-box-group-container">
     <ContentBox title="Dad Bot" span :src="dadImg" click="/dad-bot">
-      <p> I'm the guy that made one of Discord's most annoying bots. </p>
+      <p>I'm the guy that made one of Discord's most annoying bots.</p>
     </ContentBox>
     <ContentBox title="Mom Bot" span :src="momImg" click="/mom-bot">
-      <p> And Dad Bot's wife of course. </p>
+      <p>And Dad Bot's wife of course.</p>
     </ContentBox>
     <ContentBox
       title="Discord RPC"
@@ -20,7 +20,7 @@
       :src="drpcImg"
       :click="{ newTab: true, to: 'https://github.com/AlekEagle/discord-rpc' }"
     >
-      <p> A program to control your rich presence for Discord! </p>
+      <p>A program to control your rich presence for Discord!</p>
     </ContentBox>
     <ContentBox
       title="Cumulonimbus"
@@ -28,7 +28,7 @@
       :src="cumulonimbusImg"
       :click="{ newTab: true, to: 'https://alekeagle.me' }"
     >
-      <p> My public and open-source file sharing service. </p>
+      <p>My public and open-source file sharing service.</p>
     </ContentBox>
     <ContentBox
       title="My GitHub"
@@ -36,7 +36,7 @@
       :src="githubImg"
       :click="{ newTab: true, to: 'https://github.com/AlekEagle' }"
     >
-      <p> My GitHub profile. </p>
+      <p>My GitHub profile.</p>
     </ContentBox>
     <ContentBox
       title="This Website"
@@ -44,7 +44,7 @@
       :src="circleImg"
       :click="{ newTab: true, to: 'https://github.com/AlekEagle/portfolio' }"
     >
-      <p> This website! </p>
+      <p>This website!</p>
     </ContentBox>
     <ContentBox
       title="My GPG Public Key"
@@ -52,7 +52,18 @@
       :src="circleImg"
       :click="{ newTab: true, to: 'https://alekeagle.com/pubkey.asc' }"
     >
-      <p> Need to know it's me or communicate securely? Here's my public GPG key! (Also available on the OpenPGP keyserver.)</p>
+      <p>
+        Need to know it's me or communicate securely? Here's my public GPG key!
+        (Also available on the OpenPGP keyserver.)
+      </p>
+    </ContentBox>
+    <ContentBox
+      title="Uploadr"
+      span
+      :src="circleImg"
+      :click="{ newTab: true, to: 'https://github.com/AlekEagle/uploadr' }"
+    >
+      <p>An unofficial successor to ShareNix.</p>
     </ContentBox>
     <ContentBox
       title="My Discord Server"
@@ -60,7 +71,7 @@
       :src="alekSphereImg"
       :click="{ newTab: true, to: 'https://alekeagle.com/d' }"
     >
-      <p> My Discord server. </p>
+      <p>My Discord server.</p>
     </ContentBox>
   </div>
 
@@ -85,16 +96,16 @@
 </template>
 
 <script lang="ts" setup>
-  import Modal from '@/components/Modal.vue';
-  import ContentBox from '@/components/ContentBox.vue';
-  import { ref } from 'vue';
-  import circleImg from '@/assets/images/circle.png';
-  import dadImg from '@/assets/images/dad.png';
-  import momImg from '@/assets/images/mom.png';
-  import drpcImg from '@/assets/images/discordrpc.png';
-  import cumulonimbusImg from '@/assets/images/Cumulonimbus.svg';
-  import githubImg from '@/assets/images/github.svg';
-  import alekSphereImg from '@/assets/images/alek-sphere.gif';
+import Modal from "@/components/Modal.vue";
+import ContentBox from "@/components/ContentBox.vue";
+import { ref } from "vue";
+import circleImg from "@/assets/images/circle.png";
+import dadImg from "@/assets/images/dad.png";
+import momImg from "@/assets/images/mom.png";
+import drpcImg from "@/assets/images/discordrpc.png";
+import cumulonimbusImg from "@/assets/images/Cumulonimbus.svg";
+import githubImg from "@/assets/images/github.svg";
+import alekSphereImg from "@/assets/images/alek-sphere.gif";
 
-  const aboutMeModal = ref<typeof Modal>();
+const aboutMeModal = ref<typeof Modal>();
 </script>

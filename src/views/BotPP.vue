@@ -22,8 +22,7 @@
     <br />
     You can have your data deleted, or you can request a copy of it by
     contacting me via email at
-    <a href="mailto:dadbot-data@alekeagle.com" target="_blank"
-      >dadbot-data@alekeagle.com</a
+    <a href="mailto:botpp@alekeagle.com" target="_blank">botpp@alekeagle.com</a
     >.
     <br />
     <br />
@@ -35,8 +34,8 @@
 </template>
 
 <style>
-  .pp-body {
-    font-size: 1.4em;
-    padding: 0 2em;
-  }
+.pp-body {
+  font-size: 1.4em;
+  padding: 0 2em;
+}
 </style>

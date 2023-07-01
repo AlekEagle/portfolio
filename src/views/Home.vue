@@ -66,6 +66,14 @@
       <p>An unofficial successor to ShareNix.</p>
     </ContentBox>
     <ContentBox
+      title="Mess with my Keyboard"
+      span
+      :src="circleImg"
+      :click="{ newTab: true, to: 'https://keyboard.alekeagle.com' }"
+    >
+      <p>Play around and draw all over my keyboard!</p>
+    </ContentBox>
+    <ContentBox
       title="My Discord Server"
       span
       :src="alekSphereImg"

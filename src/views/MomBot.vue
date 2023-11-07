@@ -45,7 +45,7 @@
     const win = window.open(
       url,
       '_blank',
-      'width=600,height=600,menubar=no,toolbar=no,location=no,status=no'
+      'width=600,height=600,menubar=no,toolbar=no,location=no,status=no',
     );
     win?.focus();
   };

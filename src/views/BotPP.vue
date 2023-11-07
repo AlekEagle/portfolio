@@ -34,8 +34,8 @@
 </template>
 
 <style>
-.pp-body {
-  font-size: 1.4em;
-  padding: 0 2em;
-}
+  .pp-body {
+    font-size: 1.4em;
+    padding: 0 2em;
+  }
 </style>

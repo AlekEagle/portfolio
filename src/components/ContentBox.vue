@@ -28,18 +28,18 @@
     props = defineProps({
       title: {
         type: String,
-        default: 'Content Box Title'
+        default: 'Content Box Title',
       },
       span: Boolean,
       src: {
         type: String,
-        default: null
+        default: null,
       },
       click: {
         type: null,
-        default: undefined
+        default: undefined,
       },
-      disabled: Boolean
+      disabled: Boolean,
     });
 
   const handleClick = async () => {

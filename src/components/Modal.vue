@@ -58,9 +58,9 @@
   const props = defineProps({
     title: {
       type: String,
-      default: 'Modal'
+      default: 'Modal',
     },
-    cancelable: Boolean
+    cancelable: Boolean,
   });
 
   let visible = ref(false);
@@ -77,13 +77,13 @@
 
   defineExpose({
     show,
-    hide
+    hide,
   });
 </script>
 
 <script lang="ts">
   export default {
-    inheritAttrs: false
+    inheritAttrs: false,
   };
 </script>
 

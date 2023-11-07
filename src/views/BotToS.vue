@@ -21,8 +21,8 @@
 </template>
 
 <style>
-.tos-body {
-  font-size: 1.4em;
-  padding: 0 2em;
-}
+  .tos-body {
+    font-size: 1.4em;
+    padding: 0 2em;
+  }
 </style>

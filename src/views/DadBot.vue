@@ -25,7 +25,8 @@
       :click="{ newTab: true, to: 'https://github.com/Reaxt' }"
     >
       <p>
-        Thank you so much Reaxt for starting the original Dad Bot, without it there wouldn't be a Dad Bot to begin with!
+        Thank you so much Reaxt for starting the original Dad Bot, without it
+        there wouldn't be a Dad Bot to begin with!
       </p>
     </ContentBox>
     <ContentBox title="Biggest Father Figure on Discord">
@@ -61,7 +62,7 @@
     const win = window.open(
       url,
       '_blank',
-      'width=600,height=600,menubar=no,toolbar=no,location=no,status=no'
+      'width=600,height=600,menubar=no,toolbar=no,location=no,status=no',
     );
     win?.focus();
   };

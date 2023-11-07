@@ -97,23 +97,24 @@
       Hi! My name is Alek Evans, and I'm a developer of a myriad of different
       things. I do full-stack web development, but I'm also interested in
       developing Discord bots and programs associated with Discord itself. I'm
-      18 and from Utah. If you want to get in touch, feel free to email me @
+      19 and from Utah, but currently I live in Alaska. If you want to get in
+      touch, feel free to email me @
       <a href="mailto:contact@alekeagle.com">contact@alekeagle.com</a>.
     </p>
   </Modal>
 </template>
 
 <script lang="ts" setup>
-import Modal from "@/components/Modal.vue";
-import ContentBox from "@/components/ContentBox.vue";
-import { ref } from "vue";
-import circleImg from "@/assets/images/circle.png";
-import dadImg from "@/assets/images/dad.png";
-import momImg from "@/assets/images/mom.png";
-import drpcImg from "@/assets/images/discordrpc.png";
-import cumulonimbusImg from "@/assets/images/Cumulonimbus.svg";
-import githubImg from "@/assets/images/github.svg";
-import alekSphereImg from "@/assets/images/alek-sphere.gif";
+  import Modal from '@/components/Modal.vue';
+  import ContentBox from '@/components/ContentBox.vue';
+  import { ref } from 'vue';
+  import circleImg from '@/assets/images/circle.png';
+  import dadImg from '@/assets/images/dad.png';
+  import momImg from '@/assets/images/mom.png';
+  import drpcImg from '@/assets/images/discordrpc.png';
+  import cumulonimbusImg from '@/assets/images/Cumulonimbus.svg';
+  import githubImg from '@/assets/images/github.svg';
+  import alekSphereImg from '@/assets/images/alek-sphere.gif';
 
-const aboutMeModal = ref<typeof Modal>();
+  const aboutMeModal = ref<typeof Modal>();
 </script>

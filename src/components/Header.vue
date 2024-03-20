@@ -41,6 +41,7 @@
     position: sticky;
     top: 0;
     width: calc(100% - 2rem);
+    z-index: 5;
   }
 
   header .primary-header-row {
@@ -115,13 +116,8 @@
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    background: linear-gradient(
-      90deg,
-      transparent 25%,
-      var(--secondary-ui) 75%
-    );
-    background-size: 100vw;
-    background-position: 100%;
+    background-color: var(--secondary-ui);
+    box-shadow: 0 0 5px 5px var(--secondary-ui);
     position: absolute;
     right: 0;
     width: 100%;
@@ -149,16 +145,18 @@
 
   .nav-enter-active,
   .nav-leave-active {
-    transition: width 0.5s ease-in-out;
+    transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
   }
 
   .nav-enter-from,
   .nav-leave-to {
-    width: 0;
+    opacity: 0;
+    transform: translateY(-15%);
   }
 
   .nav-enter-to,
   .nav-leave-from {
-    width: 75%;
+    opacity: 1;
+    transform: translateY(0);
   }
 </style>

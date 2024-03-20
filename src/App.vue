@@ -36,6 +36,7 @@
     margin: 0;
     height: 1000vh;
     overflow: hidden auto;
+    font-family: var(--body-font);
   }
 
   a {

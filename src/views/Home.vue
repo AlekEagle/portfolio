@@ -36,6 +36,9 @@
     'devoperl',
     'develper',
     'develoer',
+    'dvleopor',
+    'develoep',
+    'dvlelper',
   ];
 
   const characterBuffer = ref(''),
@@ -110,5 +113,12 @@
     95% {
       opacity: 1;
     }
+  }
+
+  .hero-texts {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
   }
 </style>

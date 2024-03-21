@@ -16,6 +16,8 @@
     --mono-font: 'Source Code Pro', monospace;
     --primary-ui: #272727;
     --secondary-ui: #161616;
+    --primary-hover-ui: #3a3a3a;
+    --secondary-hover-ui: #252525;
     --primary-text: #ffffff;
     --secondary-text: #949494;
     --primary-accent: #00faff;
@@ -69,5 +71,30 @@
   h5,
   h6 {
     font-family: var(--header-font);
+  }
+
+  button {
+    border: solid 1px var(--primary-ui);
+    background-color: var(--secondary-ui);
+    color: var(--primary-text);
+    border-radius: 5px;
+    font-family: 'Comic Sans MS', sans-serif;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.3rem;
+    transition: background-color 0.2s, border-color 0.2s, box-shadow 0.2s;
+  }
+
+  button:hover {
+    background-color: var(--secondary-hover-ui);
+    border-color: var(--secondary-accent);
+    box-shadow: inset 0 0 2px var(--secondary-accent),
+      0 0 2px var(--secondary-accent);
+  }
+
+  button:active {
+    border-color: var(--primary-accent);
+    box-shadow: inset 0 0 5px var(--primary-accent),
+      0 0 5px var(--primary-accent);
   }
 </style>

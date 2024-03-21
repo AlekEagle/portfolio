@@ -376,3 +376,19 @@
   src: url(@/assets/fonts/SourceCodePro/SourceCodePro-Italic-VariableFont_wght.ttf)
     format('truetype');
 }
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(@/assets/fonts/ComicSansMS/Comic-Sans-MS.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Comic Sans MS';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(@/assets/fonts/ComicSansMS/Comic-Sans-MS-Bold.ttf) format('truetype');
+}

@@ -1,5 +1,5 @@
 <template>
-  <div class="hero">
+  <div class="hero-image">
     <img :src="props.src" />
     <div>
       <h1 v-text="props.title" />
@@ -18,7 +18,7 @@
 </script>
 
 <style scoped>
-  div.hero {
+  div.hero-image {
     display: flex;
     position: relative;
     width: 100%;
@@ -32,17 +32,17 @@
     user-select: none;
   }
 
-  div.hero:hover {
+  div.hero-image:hover {
     border-color: var(--primary-text);
     box-shadow: 0 0 10px var(--primary-text);
   }
 
-  div.hero img {
+  div.hero-image img {
     width: 100%;
     object-fit: cover;
   }
 
-  div.hero div {
+  div.hero-image div {
     position: absolute;
     z-index: 3;
     bottom: 0;
@@ -56,21 +56,21 @@
     transition: opacity 0.25s 0s, height 0.25s 0s;
   }
 
-  div.hero:hover div:not(:hover) {
+  div.hero-image:hover div:not(:hover) {
     opacity: 0.25;
     transition: opacity 0.25s 0.5s, height 0.25s;
   }
 
-  div.hero div:hover {
+  div.hero-image div:hover {
     height: calc(80% - 20px);
     overflow-y: auto;
   }
 
-  div.hero div * {
+  div.hero-image div * {
     margin: 0;
   }
 
-  div.hero div h1 {
+  div.hero-image div h1 {
     font-size: 1.3em;
   }
 </style>

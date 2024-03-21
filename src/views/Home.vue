@@ -7,6 +7,22 @@
         v-show="!speltProperly"
     /></h2>
   </div>
+
+  <div class="hero-texts">
+    <div class="hero-text">
+      <h2>Web Development</h2>
+      <p>
+        I primarily work with Vue and TypeScript with plain CSS and home-grown
+        Vue components for small bundle sizes when it comes to frontend
+        development, and Node.js with TypeScript, Express, and PostgreSQL for
+        backend work. While I am far from a designer, I can make a website look
+        reasonably good while keeping UX as a priority.
+      </p>
+    </div>
+    <div class="hero-text">
+      <h2>Software </h2>
+    </div>
+  </div>
 </template>
 
 <script lang="ts" setup>
@@ -26,10 +42,11 @@
     speltProperly = computed(() => characterBuffer.value === 'developer.');
 
   async function typeDeveloper() {
+    await new Promise((resolve) => setTimeout(resolve, 1000));
     for (let i = 0; i < spellings.length; i++) {
       for (let j = 0; j < spellings[i].length; j++) {
         await new Promise((resolve) =>
-          setTimeout(resolve, Math.floor(Math.random() * 100) + 100),
+          setTimeout(resolve, Math.floor(Math.random() * 300) + 100),
         );
         characterBuffer.value += spellings[i][j];
       }
@@ -77,16 +94,20 @@
     height: 1em;
     background-color: white;
     animation: blink 1s infinite;
+    margin-bottom: -3px;
   }
 
   @keyframes blink {
-    0% {
+    5% {
       opacity: 1;
     }
-    50% {
+    45% {
       opacity: 0;
     }
-    100% {
+    55% {
+      opacity: 0;
+    }
+    95% {
       opacity: 1;
     }
   }

@@ -1,11 +1,11 @@
 <template>
-  <div class="heroes">
+  <div class="hero-images">
     <slot />
   </div>
 </template>
 
 <style scoped>
-  div.heroes {
+  div.hero-images {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
     width: calc(100% - 6rem);

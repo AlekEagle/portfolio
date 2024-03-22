@@ -36,7 +36,6 @@
     background-color: var(--primary-ui);
     color: var(--primary-text);
     margin: 0;
-    height: 1000vh;
     overflow: hidden auto;
     font-family: var(--body-font);
   }

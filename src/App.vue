@@ -41,6 +41,8 @@
   }
 
   a {
+    color: var(--primary-accent);
+    text-decoration: none;
     background-image: linear-gradient(90deg, transparent, transparent);
     background-repeat: no-repeat;
     background-position: 0 95%;

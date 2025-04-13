@@ -3,7 +3,9 @@
     <div class="primary-header-row">
       <div class="logo-name">
         <RouterLink to="/">
-          <img src="@/assets/images/alek-sphere.gif" />
+          <div class="logo-parent">
+            <img src="@/assets/images/alek-sphere.gif" />
+          </div>
           <h1>Alek Evans</h1>
         </RouterLink>
       </div>
@@ -63,17 +65,27 @@
     background-image: unset;
   }
 
-  header .primary-header-row .logo-name a img {
+  header .primary-header-row .logo-name a .logo-parent {
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url('@/assets/images/alek-sphere.gif');
+    width: 48px;
+    height: 48px;
+  }
+
+  header .primary-header-row .logo-name a .logo-parent img {
+    padding: 4px;
+    margin: -4px;
     width: 3rem;
     height: 3rem;
     border-radius: 50%;
-    box-shadow: 0 0 15px -3px var(--secondary-text);
+    backdrop-filter: blur(4px) saturate(1.5);
   }
 
   header .primary-header-row .logo-name a h1 {
     font-size: 1.5rem;
     font-family: var(--header-font);
-    text-shadow: 0 0 5px var(--secondary-text);
+    text-shadow: 0 0 2px var(--secondary-text);
     margin: 0;
     background-image: linear-gradient(90deg, transparent, transparent);
     background-repeat: no-repeat;

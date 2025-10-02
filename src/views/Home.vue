@@ -97,7 +97,7 @@
       Hi! My name is Alek Evans, and I'm a developer of a myriad of different
       things. I do full-stack web development, but I'm also interested in
       developing Discord bots and programs associated with Discord itself. I'm
-      19 and from Utah, but currently I live in Alaska. If you want to get in
+      20 and from Utah, but currently I live in Alaska. If you want to get in
       touch, feel free to email me @
       <a href="mailto:contact@alekeagle.com">contact@alekeagle.com</a>.
     </p>

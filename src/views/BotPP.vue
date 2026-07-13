@@ -1,20 +1,10 @@
 <template>
   <h1>Privacy Policy for my bots.</h1>
-  <h2>Last Updated: April 18, 2022</h2>
+  <h2>Last Updated: July 13, 2026</h2>
 
   <p class="pp-body">
     This Privacy Policy describes how your personal information is collected,
     used, and shared when you use my bots.
-    <br />
-    <br />
-    <strong>Feedback</strong>
-    <br />
-    <br />
-    When you use the commands: <code>complain</code>, <code>compliment</code>,
-    and <code>suggest</code> in my bots, your feedback is sent to a channel
-    corresponding to what type of feedback you are sending. Data like your
-    account ID, username, discriminator, server ID, server name, channel ID, and
-    channel name are stored.
     <br />
     <br />
     <strong>Your Data</strong>
@@ -30,6 +20,15 @@
     <br />
     <br />
     Unless otherwise specified, no data is collected from messages.
+    <br />
+    <br />
+    <strong>Gork AI</strong>
+    <br />
+    <br />
+    Gork AI is a self-hosted AI model used for the GORK_RESPONSES feature on Dad
+    Bot. It is not connected to any external services and only receives the
+    invoking message. Messages are not stored or logged, and the model is not
+    connected to the internet.
   </p>
 </template>
 
